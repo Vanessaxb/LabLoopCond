@@ -50,7 +50,9 @@ console.log(wolfy);
 // The commit message should read: "Wild Wild Life answered"
 
 //*Yell at the Ninja Turtles
-const ninjaTurtles = ["Donatello", "Leonardo", Raphael, Michaelangelo];
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
-for (let i = 0; i < ninjaTurtles; i++) { //goes through the legth of the array
-        console.log(ninjaTurtles[i].upperCase())}
+for( let turtle of ninjaTurtles) { //goes through the legth of the array
+           
+    console.log(turtle.toUpperCase());
+}
