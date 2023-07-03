@@ -56,3 +56,33 @@ for( let turtle of ninjaTurtles) { //goes through the legth of the array
            
     console.log(turtle.toUpperCase());
 }
+
+//*Methods, Revisited
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+console.log(favMovies[8]);
+favMovies.sort(); //alphabetically order
+favMovies.pop();
+favMovies.push("Guardians of the Galaxy");
+favMovies.reverse();
+favMovies.shift();
+favMovies.unshift("Guardians of the Galaxy");
+console.log(favMovies.indexOf("Django Unchained")); // find index of "Django Unchained" wihtout counting
+favMovies.splice(15,1, "Avatar");
+console.log(favMovies.length);//19
+const newMovieList = favMovies.slice(10);
+console.log(newMovieList);
+console.log(favMovies);
+
+console.log(favMovies.indexOf("Django Unchained"));// logs -1 from item removed from Array
+
+
+
+// //*Where is Waldo
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                      ["Lucinda", "Jacc", "Neff", "Snoop"],
+                      ["Petunia", ["Baked Goods", "Waldo"]]];
+whereIsWaldo.splice(1,1);// deleted "Eggbert"
+console.log(whereIsWaldo);
+whereIsWaldo[1][2] = "No One";
+console.log(whereIsWaldo);
+console.log(whereIsWaldo[2][1][1]);
